@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">ServiceReceiverNotify</string>
+    <string name="save_me">Save Me</string>
+    <string name="fly_away">Fly Away</string>
+    <string name="somthing_just_like_this">Somthing Just Like This</string>
+    <string name="the_spectre">The Spectre</string>
+    <string name="reality">Reality</string>
+    <string name="all_falls_down">All Falls Down</string>
 </resources>
