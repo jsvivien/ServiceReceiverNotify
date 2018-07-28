@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#171717"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/anim_example"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/image_circle_tmh" />
+
+    <LinearLayout
+        android:id="@+id/lil_media"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/anim_example"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/button_previous"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_previous" />
+
+        <ImageButton
+            android:id="@+id/button_play"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_play" />
+
+        <ImageButton
+            android:id="@+id/button_next"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_next" />
+    </LinearLayout>
+
+    <TextView
+        android:fontFamily="cursive"
+        android:id="@+id/text_nameSong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/lil_media"
+        android:layout_toRightOf="@id/anim_example"
+        android:gravity="center"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="@string/app_name"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:textStyle="italic|bold" />
+
+    <SeekBar
+        android:id="@+id/seekbar_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/text_nameSong" />
+
+    <TextView
+        android:fontFamily="cursive"
+        android:id="@+id/text_timeStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/seekbar_time"
+        android:layout_marginLeft="5dp"
+        android:text="00:00"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/seekbar_time"
+        android:layout_centerInParent="true"
+        android:text="Made by TMH"
+        android:textColor="@color/color_red"
+        android:textSize="10sp"
+        android:fontFamily="casual"
+        android:textStyle="italic" />
+
+    <TextView
+        android:fontFamily="cursive"
+        android:id="@+id/text_timeEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/seekbar_time"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:text="--:--"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <ListView
+        android:id="@+id/listview_song"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/text_timeStart"
+        android:background="#000000">
+
+    </ListView>
+</RelativeLayout>

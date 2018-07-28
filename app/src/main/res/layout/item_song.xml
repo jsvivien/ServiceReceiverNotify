@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/image_itemSong"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/image_text_tmh" />
+
+    <TextView
+        android:paddingLeft="10dp"
+        android:id="@+id/text_itemNameSong"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:fontFamily="cursive"
+        android:gravity="center_vertical"
+        android:text="@string/app_name"
+        android:textColor="@android:color/white"
+        android:textSize="22sp" />
+</LinearLayout>
